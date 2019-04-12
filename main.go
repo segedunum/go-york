@@ -14,10 +14,10 @@ func handler(w http.ResponseWriter, r *http.Request) {
 		from = r.URL.String()
 	}
 	if from != "/favicon.ico" {
-		log.Printf("title: %s\n", title)
+		log.Printf("new title: %s\n", title)
 	}
 
-	fmt.Fprintf(w, "Hello from:  "+title+"\n")
+	fmt.Fprintf(w, "New Hello from:  "+title+"\n")
 }
 
 func main() {
